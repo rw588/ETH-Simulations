@@ -8,6 +8,8 @@
 #include <TGraph.h>
 #include <TVirtualFFT.h>
 #include <iostream>
+#include <TRandom3.h>
+#include <omp.h>
 
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;
@@ -16,15 +18,18 @@ const Int_t XYSTEPS = 100;
 const Int_t RESOLUTION = ZSTEPS/NUMBER_OF_PERIODS;
 
 // Forward declaration of functions
-Double_t Pattern(Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L);
+Double_t Pattern(TRandom3* randomGen, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L);
 void plane_to_grid(TVectorD coeff, Double_t xlim, Double_t ylim, Int_t steps, TMatrixD& X, TMatrixD& Y, TMatrixD& Z);
+TRandom3 randomGen;
 
 int main() {
     // Define constants
     Double_t GRATING_PERIOD = 100;
     Double_t WAVELENGTH = 5;
     Double_t TALBOT_LENGTH = TMath::Power(GRATING_PERIOD, 2) / WAVELENGTH;
+//position of the centre of the pattern
     Double_t Z0 = TALBOT_LENGTH * NUMBER_OF_PERIODS / 2;
+//width of the pattern (Good field region)
     Double_t L = TALBOT_LENGTH * 10;
 
     std::cout << TALBOT_LENGTH << " ";
@@ -33,6 +38,7 @@ int main() {
     TVectorD x(XYSTEPS), y(XYSTEPS), z(ZSTEPS);
     for (Int_t i = 0; i < XYSTEPS; i++) {
         x[i] = i * (NUMBER_OF_PERIODS * GRATING_PERIOD) / XYSTEPS;
+        //resolution = XYSTEPS / (NUMBER_OF_PERIODS)
         y[i] = x[i];
     }
     for (Int_t i = 0; i < ZSTEPS; i++) {
@@ -44,9 +50,9 @@ int main() {
     third_grating = 1;
 
     // Tip and rotation angles
-    Double_t tip_angle = TMath::Pi() / 2.1;
-    Double_t rotation_angle_x = TMath::Pi() / 3;
-    Double_t rotation_angle_y = TMath::Pi() / 6;
+    Double_t tip_angle = 0*TMath::Pi() / 6;
+    Double_t rotation_angle_x = 0*TMath::Pi() / 6;
+    Double_t rotation_angle_y = 0*TMath::Pi() / 2;
 
     // Define rotation matrices
     TMatrixD R_z(3, 3);
@@ -86,7 +92,9 @@ int main() {
     //creat plotter
     TGraph *graph = new TGraph(XYSTEPS);
 
-#pragma omp parallel for
+#pragma omp parallel private(randomGen)
+    TRandom3 randomGen(omp_get_thread_num());
+    #pragma omp for
     for (Int_t i = 0; i < z.GetNrows(); i++) {
         //std::cout << i << " ";
         Double_t sum_pattern = 0.0;
@@ -94,13 +102,13 @@ int main() {
         //add for loop for j and k and then create a true mean
         for (Int_t j = 0; j < x.GetNrows(); j++) {
             for (Int_t k = 0; k < y.GetNrows(); k++) {
-                Double_t pattern = Pattern(x[j], y[k], z[i], GRATING_PERIOD, TALBOT_LENGTH, Z0, L);
+                Double_t pattern = Pattern(&randomGen, x[j], y[k], z[i], GRATING_PERIOD, TALBOT_LENGTH, Z0, L);
                 sum_pattern += pattern;
                 count++;
             }
             mean_pattern_values[i] = sum_pattern / count;
 
-#pragma omp critical
+            #pragma omp critical
             {
                 graph->SetPoint(i, z[i], mean_pattern_values[i]);
             }
@@ -140,73 +148,15 @@ int main() {
     std::cout << "Rows: " << z.GetNrows() << " ";
     std::cout << "Window size: " << window_size << " ";
 
-/*
-    for (Int_t i = 0; i < z.GetNrows() - window_size + 1; i++) {
-        // Create an array for the window data
-        Double_t window_data[window_size];
-
-        // Fill the window data array
-        for (Int_t j = 0; j < window_size; j++) {
-            window_data[j] = mean_pattern_values[i+j];
-        }
-
-        // Set the data for the FFT
-        fft->SetPoints(window_data);
-
-        // Compute the FFT
-        fft->Transform();
-
-    // Get the magnitude of the FFT result
-        Double_t fft_magnitude[window_size];
-        for (Int_t j = 0; j < window_size; j++) {
-            Double_t re, im;
-            fft->GetPointComplex(j, re, im);
-            fft_magnitude[j] = TMath::Sqrt(re*re + im*im);
-        }
-
-// Calculate the mean of the FFT magnitude
-        Double_t fft_mean = 0;
-        for (Int_t j = 0; j < window_size; j++) {
-            fft_mean += fft_magnitude[j];
-        }
-        fft_mean /= window_size;
-
-
-        // Add the FFT mean to the FFT graph
-        fft_graph->SetPoint(i / window_size, z[i] + window_size / 2.0, fft_mean);
-    }
-
-// Create a new TCanvas for the FFT graph
-    TCanvas* c2 = new TCanvas("c2", "FFT Plot", 800, 600);
-
-    // Set marker style to a cross
-    fft_graph->SetMarkerStyle(3);  // 3 is the code for a cross
-
-// Set marker and line color to blue
-    fft_graph->SetMarkerColor(kBlue);
-    fft_graph->SetLineColor(kBlue);
-
-// Draw the FFT graph
-    fft_graph->Draw("APL");
-
-// Set titles
-    fft_graph->SetTitle("FFT of Pattern vs. Z; Z; FFT of Pattern");
-
-// Update the canvas
-    c2->Update();
-
-// Save the canvas to a .png file
-    c2->SaveAs("fft_output.png");
-*/
 ////////////////////////////////
 
 // Create a 2D vector for FFT results
     std::vector<std::vector<Double_t>> fft_results(ZSTEPS - window_size, std::vector<Double_t>(window_size, 0));
 
-#pragma omp parallel for
-    for (Int_t j = 0; j < z.GetNrows() - window_size; j++) {
-        std::cout << j << " / " << z.GetNrows()-window_size << std::endl;
+#pragma omp parallel
+    #pragma omp for
         for (Int_t i = 0; i < z.GetNrows() - window_size + 1; i++) {
+            std::cout << i << " / " << z.GetNrows() - window_size << std::endl;
             // Create an array for the window data
             Double_t window_data[window_size];
 
@@ -230,10 +180,9 @@ int main() {
             }
             // Store the FFT magnitudes
             for (Int_t k = 0; k < window_size; k++) {
-                fft_results[j][k] = fft_magnitude[k];
+                fft_results[i][k] = fft_magnitude[k];
             }
         }
-    }
 
 //now we have fft results
 // Set the size of the array
@@ -241,20 +190,20 @@ int main() {
     const Int_t M = window_size; // replace with your actual array size
 
     // Normalize each row to its maximum value
-    for (Int_t i = 0; i < N; ++i) {
-        // Find the maximum value in the row
-        Double_t max_value = fft_results[i][0];
-        for (Int_t j = 0; j < M; ++j) {
-            if (fft_results[i][j] > max_value) {
-                max_value = fft_results[i][j];
-            }
-        }
-
-        // Normalize the row
-        for (Int_t j = 0; j < M; ++j) {
-            fft_results[i][j] /= max_value;
-        }
-    }
+//    for (Int_t i = 0; i < N; ++i) {
+//        // Find the maximum value in the row
+//        Double_t max_value = fft_results[i][0];
+//        for (Int_t j = 0; j < M; ++j) {
+//            if (fft_results[i][j] > max_value) {
+//                max_value = fft_results[i][j];
+//            }
+//        }
+//
+//        // Normalize the row
+//        for (Int_t j = 0; j < M; ++j) {
+//            fft_results[i][j] /= max_value;
+//        }
+//    }
 
 
 
@@ -262,8 +211,8 @@ int main() {
     TH2D *hist = new TH2D("hist", "FFT Results", ZSTEPS, 0, ZSTEPS, window_size, 0, window_size);
 
     // Fill the histogram with the values from fft_results
-    for (int i = 0; i < ZSTEPS-window_size; i++) {
-        for (int j = 0; j < window_size; j++) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
             //hist->SetBinContent(i+1, j+1, fft_results[i][j]);
             hist->SetBinContent(i+1, j+1, mean_pattern_values[i+j]);
         }
@@ -276,7 +225,7 @@ int main() {
     hist->Draw("COLZ");
 
     // Save the canvas as a PNG file
-    canvas->SaveAs("fft.png");
+    canvas->SaveAs("preFft.png");
 
 
 
@@ -296,6 +245,7 @@ int main() {
     // Draw the histogram
     h2->Draw("COLZ");
 
+
     // Save the canvas as a png image
     c3->SaveAs("fft_results.png");
 
@@ -304,11 +254,13 @@ int main() {
 
 }
 
-Double_t Pattern(Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
-    return TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
-           TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
-           TMath::Exp(-(z - Z0) * (z - Z0) / (L * L));
+Double_t Pattern(TRandom3* randomGen, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
+    Double_t noise = (randomGen->Rndm() - 0.5) * 0.1;  // Random noise in range [-0.05, 0.05]
+    return (TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
+            TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
+            TMath::Exp(-(z - Z0) * (z - Z0) / (L * L))) + noise;
 }
+
 
 void plane_to_grid(TVectorD coeff, Double_t xlim, Double_t ylim, Int_t steps, TMatrixD& X, TMatrixD& Y, TMatrixD& Z) {
     Double_t A = coeff[0], B = coeff[1], C = coeff[2];

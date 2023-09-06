@@ -51,9 +51,9 @@ int main() {
     //third_grating = 1;
 
     // Tip and rotation angles
-    Double_t tip_angle = TMath::Pi() / 999;
-    Double_t rotation_angle_x = TMath::Pi() / 999;
-    Double_t rotation_angle_y = TMath::Pi() / 999;
+    Double_t tip_angle = TMath::Pi() / 6;
+    Double_t rotation_angle_x = TMath::Pi() / 6;
+    Double_t rotation_angle_y = TMath::Pi() / 6;
 
     // Define rotation matrices
     TMatrixD R_z(3, 3);
@@ -264,9 +264,14 @@ int main() {
 
     prepare_fft_axis(h2, dt, window_size);
 
+    Double_t bin_min = 450;
+    Double_t  bin_max = 550;
+
+
     // Create a canvas to draw the histogram
     TCanvas *c3 = new TCanvas("c3", "FFT Results", 800, 600);
 
+    h2->GetYaxis()->SetRange(bin_min, bin_max);
     // Draw the histogram
     h2->Draw("COLZ");
 
@@ -281,7 +286,7 @@ int main() {
 }
 
 Double_t Pattern(TRandom3* randomGen1, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
-    Double_t noise = (randomGen1->Rndm() - 0.5) * 3;  // Random noise in range [-0.05, 0.05]
+    Double_t noise = (randomGen1->Rndm() - 0.5) * 0.1;  // Random noise in range [-0.05, 0.05]
     return (TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
             TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
             TMath::Exp(-(z - Z0) * (z - Z0) / (L * L))) + noise;
@@ -325,8 +330,10 @@ void prepare_fft_axis(TH2D *hist, double dt, int window_size) {
     double df = 1.0 / (window_size * dt);
     double f_max = 1.0 / (2.0 * dt);
 
-    for (int k = 1; k <= window_size; ++k) {
+    //adding the correct axis
+    int label_step = window_size/10;
+    for (int k = 1; k <= window_size; k+=label_step) {
         double freq = -f_max + (k - 1) * df;
-        hist -> GetXaxis()->SetBinLabel(k, Form("%.2f", freq));
+        hist -> GetYaxis()->SetBinLabel(k, Form("%.2f", freq));
     }
 }

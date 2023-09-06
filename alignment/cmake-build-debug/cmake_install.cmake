@@ -1,4 +1,4 @@
-# Install script for directory: /media/rob/Data/Coding/Git/ETH-Simulations/alignment
+# Install script for directory: /home/rob/Documents/Coding/ETH-Simulations/alignment
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

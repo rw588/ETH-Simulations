@@ -5,28 +5,27 @@
 		<Option title="Alignment"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\home\;CMake Files\..\..\..\..\..\..\..\home\rob\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\cmake\;CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\miniconda3\;CMake Files\..\..\..\..\miniconda3\envs\;CMake Files\..\..\..\..\miniconda3\envs\pyROOT\;CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\;CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\;CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\cmake\;CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug"/>
+				<Option working_dir="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Alignment">
-				<Option output="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Alignment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug"/>
+				<Option output="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Alignment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D__ROOFIT_NOBANNER"/>
 					<Add directory="/home/rob/miniconda3/envs/pyROOT/include"/>
-					<Add directory="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
@@ -36,22 +35,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 Alignment"/>
-					<CompileFile command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 Alignment"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Alignment/fast">
-				<Option output="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Alignment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug"/>
+				<Option output="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Alignment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D__ROOFIT_NOBANNER"/>
 					<Add directory="/home/rob/miniconda3/envs/pyROOT/include"/>
-					<Add directory="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
@@ -61,62 +59,62 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 Alignment/fast"/>
-					<CompileFile command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 Alignment/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug"/>
+				<Option working_dir="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug"/>
+				<Option working_dir="/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j24 -f &quot;/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/alignmentC.cpp">
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/alignmentC.cpp">
 			<Option target="Alignment"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/CMakeLists.txt">
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/cmake/ROOTConfig-targets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/cmake/ROOTConfig-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/cmake/ROOTConfig-targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/cmake/ROOTConfig-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/cmake/ROOTConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/cmake/ROOTConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/cmake/ROOTConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/cmake/ROOTConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/cmake/RootMacros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\cmake\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/cmake/RootMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\cmake\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
 		</Unit>
-		<Unit filename="/media/rob/Data/Coding/Git/ETH-Simulations/alignment/../../../../../../../home/rob/miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\home\rob\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
+		<Unit filename="/home/rob/Documents/Coding/ETH-Simulations/alignment/../../../../miniconda3/envs/pyROOT/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\miniconda3\envs\pyROOT\share\cmake\nlohmann_json\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

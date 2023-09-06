@@ -1,17 +1,4 @@
-The system is: Linux - 5.15.0-78-generic - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdC/a.out"
-
+The system is: Linux - 6.2.0-32-generic - x86_64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
 Build flags: 
@@ -23,211 +10,15 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/a.out"
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d268/fast && /usr/bin/make  -f CMakeFiles/cmTC_7d268.dir/build.make CMakeFiles/cmTC_7d268.dir/build
-make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCCompilerABI.c
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7d268.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccO5csgN.s
-GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/local/include"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
-End of search list.
-GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 37cab164997aa1a032ece9abb3a79611
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o /tmp/ccO5csgN.s
-GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_7d268
-/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d268.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -o cmTC_7d268 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d268' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d268.'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cclp05Uc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7d268 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d268' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d268.'
-make[1]: Leaving directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-
-Parsed C implicit include dir info from above output: rv=done
-  found start of include info
-  found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include]
-    add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed]
-    add: [/usr/include/x86_64-linux-gnu]
-    add: [/usr/include]
-  end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include]
-  collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include;/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d268/fast && /usr/bin/make  -f CMakeFiles/cmTC_7d268.dir/build.make CMakeFiles/cmTC_7d268.dir/build]
-  ignore line: [make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCCompilerABI.c]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/']
-  ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7d268.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccO5csgN.s]
-  ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 37cab164997aa1a032ece9abb3a79611]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o /tmp/ccO5csgN.s]
-  ignore line: [GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_7d268]
-  ignore line: [/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d268.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -o cmTC_7d268 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d268' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d268.']
-  link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cclp05Uc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7d268 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cclp05Uc.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_7d268] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..]
-    arg [CMakeFiles/cmTC_7d268.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> [/usr/x86_64-unknown-linux-gnu/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/x86_64-unknown-linux-gnu/lib;/usr/lib]
-  implicit fwks: []
-
+The CXX compiler identification is GNU, found in "/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/a.out"
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_8d653/fast && /usr/bin/make  -f CMakeFiles/cmTC_8d653.dir/build.make CMakeFiles/cmTC_8d653.dir/build
-make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3343/fast && /usr/bin/make  -f CMakeFiles/cmTC_d3343.dir/build.make CMakeFiles/cmTC_d3343.dir/build
+make[1]: Entering directory '/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-unknown-linux-gnu
@@ -235,8 +26,8 @@ Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d653.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccbtTWCa.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/'
+ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d3343.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cc7BpFvZ.s
 GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
 	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -259,15 +50,15 @@ GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 6e3c1e75a37aacb2b4bd0742c7dfc81e
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbtTWCa.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7BpFvZ.s
 GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38
 COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_8d653
-/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d653.dir/link.txt --verbose=1
-/usr/bin/c++  -v CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8d653 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_d3343
+/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3343.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d3343 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper
@@ -278,10 +69,10 @@ Supported LTO compression algorithms: zlib
 gcc version 12.2.0 (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d653' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d653.'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhxJEw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8d653 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d653' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d653.'
-make[1]: Leaving directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d3343' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d3343.'
+ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccukoUFL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d3343 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d3343' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d3343.'
+make[1]: Leaving directory '/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
@@ -308,12 +99,12 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_8d653/fast && /usr/bin/make  -f CMakeFiles/cmTC_8d653.dir/build.make CMakeFiles/cmTC_8d653.dir/build]
-  ignore line: [make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3343/fast && /usr/bin/make  -f CMakeFiles/cmTC_d3343.dir/build.make CMakeFiles/cmTC_d3343.dir/build]
+  ignore line: [make[1]: Entering directory '/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-unknown-linux-gnu]
@@ -321,8 +112,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/']
-  ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d653.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccbtTWCa.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d3343.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cc7BpFvZ.s]
   ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
   ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -345,15 +136,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 6e3c1e75a37aacb2b4bd0742c7dfc81e]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbtTWCa.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7BpFvZ.s]
   ignore line: [GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_8d653]
-  ignore line: [/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d653.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8d653 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_d3343]
+  ignore line: [/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3343.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d3343 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper]
@@ -364,13 +155,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 12.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d653' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d653.']
-  link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhxJEw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8d653 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d3343' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d3343.']
+  link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccukoUFL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d3343 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccGhxJEw.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccukoUFL.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -384,7 +175,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8d653] ==> ignore
+    arg [cmTC_d3343] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o]
@@ -397,7 +188,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib]
     arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..]
-    arg [CMakeFiles/cmTC_8d653.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d3343.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -421,364 +212,6 @@ Parsed CXX implicit link information from above output:
   collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
   implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/x86_64-unknown-linux-gnu/lib;/usr/lib]
-  implicit fwks: []
-
-
-Detecting C OpenMP compiler ABI info compiled with the following output:
-Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a20e/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a20e.dir/build.make CMakeFiles/cmTC_4a20e.dir/build
-make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o
-/usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -c /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_4a20e.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cc5YxlWG.s
-GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/local/include"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
-End of search list.
-GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 37cab164997aa1a032ece9abb3a79611
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o /tmp/cc5YxlWG.s
-GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.'
-Linking C executable cmTC_4a20e
-/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a20e.dir/link.txt --verbose=1
-/usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -o cmTC_4a20e  -v 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4a20e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4a20e.'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdbvcZI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4a20e /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4a20e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4a20e.'
-make[1]: Leaving directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-
-Parsed C OpenMP implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a20e/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a20e.dir/build.make CMakeFiles/cmTC_4a20e.dir/build]
-  ignore line: [make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o]
-  ignore line: [/usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -c /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/']
-  ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_4a20e.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cc5YxlWG.s]
-  ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 37cab164997aa1a032ece9abb3a79611]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o /tmp/cc5YxlWG.s]
-  ignore line: [GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.']
-  ignore line: [Linking C executable cmTC_4a20e]
-  ignore line: [/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a20e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -o cmTC_4a20e  -v ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4a20e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_4a20e.']
-  link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdbvcZI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4a20e /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccdbvcZI.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_4a20e] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..]
-    arg [CMakeFiles/cmTC_4a20e.dir/OpenMPTryFlag.c.o] ==> ignore
-    arg [-lgomp] ==> lib [gomp]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [-lpthread] ==> lib [pthread]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> [/usr/x86_64-unknown-linux-gnu/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
-  implicit objs: []
-  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/x86_64-unknown-linux-gnu/lib;/usr/lib]
-  implicit fwks: []
-
-
-Detecting CXX OpenMP compiler ABI info compiled with the following output:
-Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_05700/fast && /usr/bin/make  -f CMakeFiles/cmTC_05700.dir/build.make CMakeFiles/cmTC_05700.dir/build
-make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o
-/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -c /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_05700.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cc312s9p.s
-GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/local/include"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
-End of search list.
-GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 6e3c1e75a37aacb2b4bd0742c7dfc81e
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o /tmp/cc312s9p.s
-GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.'
-Linking CXX executable cmTC_05700
-/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05700.dir/link.txt --verbose=1
-/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -o cmTC_05700  -v 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper
-Target: x86_64-unknown-linux-gnu
-Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic
-Thread model: posix
-Supported LTO compression algorithms: zlib
-gcc version 12.2.0 (GCC) 
-COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
-Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05700' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_05700.'
- /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccunwByy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_05700 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05700' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_05700.'
-make[1]: Leaving directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-
-Parsed CXX OpenMP implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_05700/fast && /usr/bin/make  -f CMakeFiles/cmTC_05700.dir/build.make CMakeFiles/cmTC_05700.dir/build]
-  ignore line: [make[1]: Entering directory '/media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/usr/bin/c++   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -c /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/']
-  ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /media/rob/Data/Coding/Git/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_05700.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -o /tmp/cc312s9p.s]
-  ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-unknown-linux-gnu]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include]
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-unknown-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 6e3c1e75a37aacb2b4bd0742c7dfc81e]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o /tmp/cc312s9p.s]
-  ignore line: [GNU assembler version 2.38 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.38]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.']
-  ignore line: [Linking CXX executable cmTC_05700]
-  ignore line: [/app/extra/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05700.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -o cmTC_05700  -v ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --with-tune=generic --enable-deterministic-archives --enable-shared --build=x86_64-bootstrapper-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --with-tune=generic]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib]
-  ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_05700' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_05700.']
-  link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccunwByy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_05700 /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../.. CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccunwByy.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_05700] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..]
-    arg [CMakeFiles/cmTC_05700.dir/OpenMPTryFlag.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgomp] ==> lib [gomp]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> [/usr/x86_64-unknown-linux-gnu/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
-  implicit objs: []
   implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/12.2.0;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/x86_64-unknown-linux-gnu/lib;/usr/lib]
   implicit fwks: []
 

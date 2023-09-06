@@ -9,11 +9,11 @@
 #include <TVirtualFFT.h>
 #include <iostream>
 #include <TRandom3.h>
-//#include <omp.h>
+#include <omp.h>
 
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;
-const Int_t ZSTEPS = 1000;
+const Int_t ZSTEPS = 3000;
 const Int_t XYSTEPS = 100;
 const Int_t RESOLUTION = ZSTEPS/NUMBER_OF_PERIODS;
 
@@ -30,7 +30,7 @@ int main() {
 //position of the centre of the pattern
     Double_t Z0 = TALBOT_LENGTH * NUMBER_OF_PERIODS / 2;
 //width of the pattern (Good field region)
-    Double_t L = TALBOT_LENGTH * 10;
+    Double_t L = TALBOT_LENGTH * 2;
 
     std::cout << TALBOT_LENGTH << " ";
 
@@ -92,10 +92,10 @@ int main() {
     //creat plotter
     TGraph *graph = new TGraph(XYSTEPS);
 
-//#pragma omp parallel private(randomGen)
+#pragma omp parallel private(randomGen)
     //TRandom3 randomGen(omp_get_thread_num());
     TRandom3 randomGen (24);
-//#pragma omp for
+#pragma omp for
     //generate the pattern as seen by the third grating
     for (Int_t i = 0; i < z.GetNrows(); i++) {
         //std::cout << i << " ";
@@ -110,7 +110,7 @@ int main() {
             }
             mean_pattern_values[i] = sum_pattern / count;
 
-//#pragma omp critical
+#pragma omp critical
             {
                 graph->SetPoint(i, z[i], mean_pattern_values[i]);
             }
@@ -155,8 +155,8 @@ int main() {
 // Create a 2D vector for FFT results
     std::vector<std::vector<Double_t>> fft_results(ZSTEPS - window_size, std::vector<Double_t>(window_size, 0));
 
-//#pragma omp parallel
-//#pragma omp for
+#pragma omp parallel
+#pragma omp for
     std::cout << "fftresults.size" << fft_results.size() << std::endl;
     for (Int_t i = 0; i < z.GetNrows() - window_size; i++) {
         std::cout << i << " / " << z.GetNrows() - window_size << std::endl;
@@ -265,7 +265,7 @@ int main() {
 }
 
 Double_t Pattern(TRandom3* randomGen1, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
-    Double_t noise = (randomGen1->Rndm() - 0.5) * 0.1;  // Random noise in range [-0.05, 0.05]
+    Double_t noise = (randomGen1->Rndm() - 0.5) * 10;  // Random noise in range [-0.05, 0.05]
     return (TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
             TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
             TMath::Exp(-(z - Z0) * (z - Z0) / (L * L))) + noise;

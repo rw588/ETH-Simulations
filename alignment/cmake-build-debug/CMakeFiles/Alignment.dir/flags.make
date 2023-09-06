@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -D__ROOFIT_NOBANNER
 
-CXX_INCLUDES = -I/home/rob/miniconda3/envs/pyROOT/include -I/media/rob/Data/Coding/Git/ETH-Simulations/alignment/include
+CXX_INCLUDES = -I/home/rob/miniconda3/envs/pyROOT/include
 
-CXX_FLAGS =  -fopenmp -g -fdiagnostics-color=always -std=gnu++17
+CXX_FLAGS = -g -fdiagnostics-color=always -std=gnu++17
 

@@ -13,14 +13,16 @@
 
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;
-const Int_t ZSTEPS = 3000;
+const Int_t ZSTEPS = 10000;
 const Int_t XYSTEPS = 100;
 const Int_t RESOLUTION = ZSTEPS/NUMBER_OF_PERIODS;
 
 // Forward declaration of functions
 Double_t Pattern(TRandom3* randomGen, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L);
 void plane_to_grid(TVectorD coeff, Double_t xlim, Double_t ylim, Int_t steps, TMatrixD& X, TMatrixD& Y, TMatrixD& Z);
+void fft_shift(Double_t *fft_magnitude, Int_t window_size);
 //TRandom3 randomGen;
+void prepare_fft_axis(TH2D *hist, double dt, int window_size);
 
 int main() {
     // Define constants
@@ -37,8 +39,7 @@ int main() {
     // Create 2D grid for x and z
     TVectorD x(XYSTEPS), y(XYSTEPS), z(ZSTEPS);
     for (Int_t i = 0; i < XYSTEPS; i++) {
-        x[i] = i * (NUMBER_OF_PERIODS * GRATING_PERIOD) / XYSTEPS;
-        //resolution = XYSTEPS / (NUMBER_OF_PERIODS)
+        x[i] = (i-XYSTEPS/2) * (NUMBER_OF_PERIODS * GRATING_PERIOD) / XYSTEPS;
         y[i] = x[i];
     }
     for (Int_t i = 0; i < ZSTEPS; i++) {
@@ -47,12 +48,12 @@ int main() {
 
     // Define the third grating plane, starts upright
     TMatrixD third_grating(XYSTEPS, XYSTEPS);
-    third_grating = 1;
+    //third_grating = 1;
 
     // Tip and rotation angles
-    Double_t tip_angle = 0*TMath::Pi() / 6;
-    Double_t rotation_angle_x = 0*TMath::Pi() / 6;
-    Double_t rotation_angle_y = 0*TMath::Pi() / 2;
+    Double_t tip_angle = TMath::Pi() / 999;
+    Double_t rotation_angle_x = TMath::Pi() / 999;
+    Double_t rotation_angle_y = TMath::Pi() / 999;
 
     // Define rotation matrices
     TMatrixD R_z(3, 3);
@@ -86,12 +87,15 @@ int main() {
     R_y[2][0] = -TMath::Sin(rotation_angle_y);
     R_y[2][1] = 0;
     R_y[2][2] = TMath::Cos(rotation_angle_y);
-
+    //total rotation matrix
+    TMatrixD R = R_x * R_y * R_z;
+    //mean pattern vector declaration
     TVectorD mean_pattern_values(z.GetNrows());
 
-    //creat plotter
+    //create plotter
     TGraph *graph = new TGraph(XYSTEPS);
 
+    //it is required for each core to have its own random generator. If left at 24 this prevents problem between macOS and linux
 #pragma omp parallel private(randomGen)
     //TRandom3 randomGen(omp_get_thread_num());
     TRandom3 randomGen (24);
@@ -104,7 +108,15 @@ int main() {
         //add for loop for j and k and then create a true mean
         for (Int_t j = 0; j < x.GetNrows(); j++) {
             for (Int_t k = 0; k < y.GetNrows(); k++) {
-                Double_t pattern = Pattern(&randomGen, x[j], y[k], z[i], GRATING_PERIOD, TALBOT_LENGTH, Z0, L);
+                //define the x,y,z point to be rotated and pattern generated
+                TMatrixD point(3,1);
+                point[0][0] = x[j];
+                point[1][0] = y[k];
+                point[2][0] = z[i];
+                //rotate the point
+                TMatrixD rotP = R * point;
+                //extract the pattern
+                Double_t pattern = Pattern(&randomGen, rotP[0][0], rotP[1][0], rotP[2][0], GRATING_PERIOD, TALBOT_LENGTH, Z0, L);
                 sum_pattern += pattern;
                 count++;
             }
@@ -181,11 +193,12 @@ int main() {
             fft->GetPointComplex(k, re, im);
             fft_magnitude[k] = TMath::Sqrt(re * re + im * im);
         }
+
+        //perform fft shift like in numpy
+        fft_shift(fft_magnitude, window_size);
+
         // Store the FFT magnitudes
         for (Int_t k = 0; k < window_size; k++) {
-            //std::cout << 'mag: ' << fft_magnitude[k] << " " << k << std::endl;
-            //std::cout << 'res: ' << fft_results[i][k] << " " << i << std::endl;
-            //std::cout << i << std::endl;
             fft_results[i][k] = fft_magnitude[k];
         }
         std::cout << fft_results[i].size() << " " << std::endl;
@@ -247,6 +260,9 @@ int main() {
             h2->Fill(i, j, fft_results[i][j]);
         }
     }
+    Double_t dt = (NUMBER_OF_PERIODS * TALBOT_LENGTH) / ZSTEPS;
+
+    prepare_fft_axis(h2, dt, window_size);
 
     // Create a canvas to draw the histogram
     TCanvas *c3 = new TCanvas("c3", "FFT Results", 800, 600);
@@ -265,7 +281,7 @@ int main() {
 }
 
 Double_t Pattern(TRandom3* randomGen1, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
-    Double_t noise = (randomGen1->Rndm() - 0.5) * 10;  // Random noise in range [-0.05, 0.05]
+    Double_t noise = (randomGen1->Rndm() - 0.5) * 3;  // Random noise in range [-0.05, 0.05]
     return (TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
             TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
             TMath::Exp(-(z - Z0) * (z - Z0) / (L * L))) + noise;
@@ -291,3 +307,26 @@ void plane_to_grid(TVectorD coeff, Double_t xlim, Double_t ylim, Int_t steps, TM
     }
 }
 
+//this function does the same as a numpy fftshift it can be applied in the main or not depending on preference
+//this func shifts a std::vector not a 2d vector so perform the shift before filling the 2d vec or TH2D
+void fft_shift(Double_t *fft_magnitude, Int_t window_size) {
+    Double_t shifted[window_size];
+    Int_t half_window = window_size / 2;
+    for (Int_t k = 0; k < window_size; ++k) {
+        Int_t index_shifted = (k + half_window) % window_size;
+        shifted[index_shifted] = fft_magnitude[k];
+    }
+    for (Int_t k = 0; k < window_size; ++k) {
+        fft_magnitude[k] = shifted[k];
+    }
+}
+//function to generate the correct axis for the frequency after the fft
+void prepare_fft_axis(TH2D *hist, double dt, int window_size) {
+    double df = 1.0 / (window_size * dt);
+    double f_max = 1.0 / (2.0 * dt);
+
+    for (int k = 1; k <= window_size; ++k) {
+        double freq = -f_max + (k - 1) * df;
+        hist -> GetXaxis()->SetBinLabel(k, Form("%.2f", freq));
+    }
+}

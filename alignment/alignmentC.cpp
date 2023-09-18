@@ -13,8 +13,8 @@
 
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;
-const Int_t ZSTEPS = 10000;
-const Int_t XYSTEPS = 100;
+const Int_t ZSTEPS = 3000;
+const Int_t XYSTEPS = 300;
 const Int_t RESOLUTION = ZSTEPS/NUMBER_OF_PERIODS;
 
 // Forward declaration of functions
@@ -26,17 +26,17 @@ void prepare_fft_axis(TH2D *hist, double dt, int window_size);
 
 int main() {
     // Define constants
-    Double_t GRATING_PERIOD = 100;
+    Double_t GRATING_PERIOD = 400;
     Double_t WAVELENGTH = 5;
     Double_t TALBOT_LENGTH = TMath::Power(GRATING_PERIOD, 2) / WAVELENGTH;
 //position of the centre of the pattern
     Double_t Z0 = TALBOT_LENGTH * NUMBER_OF_PERIODS / 2;
 //width of the pattern (Good field region)
-    Double_t L = TALBOT_LENGTH * 2;
+    Double_t L = TALBOT_LENGTH * 1000;
 
     std::cout << TALBOT_LENGTH << " ";
 
-    // Create 2D grid for x and z
+    // Create 2D grid for x and zOthers
     TVectorD x(XYSTEPS), y(XYSTEPS), z(ZSTEPS);
     for (Int_t i = 0; i < XYSTEPS; i++) {
         x[i] = (i-XYSTEPS/2) * (NUMBER_OF_PERIODS * GRATING_PERIOD) / XYSTEPS;
@@ -51,9 +51,9 @@ int main() {
     //third_grating = 1;
 
     // Tip and rotation angles
-    Double_t tip_angle = TMath::Pi() / 6;
-    Double_t rotation_angle_x = TMath::Pi() / 6;
-    Double_t rotation_angle_y = TMath::Pi() / 6;
+    Double_t tip_angle = TMath::Pi() / 12;
+    Double_t rotation_angle_x = 0*TMath::Pi() / 12;
+    Double_t rotation_angle_y = 0*TMath::Pi() / 12;
 
     // Define rotation matrices
     TMatrixD R_z(3, 3);
@@ -264,20 +264,31 @@ int main() {
 
     prepare_fft_axis(h2, dt, window_size);
 
-    Double_t bin_min = 450;
-    Double_t  bin_max = 550;
+    //Double_t bin_min = 450;
+    //Double_t  bin_max = 550;
 
 
-    // Create a canvas to draw the histogram
     TCanvas *c3 = new TCanvas("c3", "FFT Results", 800, 600);
 
+// Get total number of bins in the histogram
+    Int_t total_bins = h2->GetNbinsY();
+
+// Calculate the midpoint bin
+    Int_t midpoint_bin = total_bins / 2;
+
+// Define a window around the midpoint bin
+    Int_t window = 25; // Change this value as needed
+    Int_t bin_min = midpoint_bin - window;
+    Int_t bin_max = midpoint_bin + window;
+
+// Ensure bin_min and bin_max are valid
+    if (bin_min < 1) bin_min = 1;
+    if (bin_max > total_bins) bin_max = total_bins;
+
     h2->GetYaxis()->SetRange(bin_min, bin_max);
-    // Draw the histogram
     h2->Draw("COLZ");
-
-
-    // Save the canvas as a png image
     c3->SaveAs("fft_results.png");
+
 
     std::cout << "simulation is finished " << std::endl;
     return 0;
@@ -286,7 +297,7 @@ int main() {
 }
 
 Double_t Pattern(TRandom3* randomGen1, Double_t x, Double_t y, Double_t z, Double_t GRATING_PERIOD, Double_t TALBOT_LENGTH, Double_t Z0, Double_t L) {
-    Double_t noise = (randomGen1->Rndm() - 0.5) * 0.1;  // Random noise in range [-0.05, 0.05]
+    Double_t noise = (randomGen1->Rndm() - 0.5) * 0;  // Random noise in range [-0.05, 0.05]
     return (TMath::Power(TMath::Cos(2 * TMath::Pi() / GRATING_PERIOD * x), 2) *
             TMath::Power(TMath::Cos(2 * TMath::Pi() / TALBOT_LENGTH * (z - Z0)), 2) *
             TMath::Exp(-(z - Z0) * (z - Z0) / (L * L))) + noise;
@@ -329,11 +340,12 @@ void fft_shift(Double_t *fft_magnitude, Int_t window_size) {
 void prepare_fft_axis(TH2D *hist, double dt, int window_size) {
     double df = 1.0 / (window_size * dt);
     double f_max = 1.0 / (2.0 * dt);
+    std::cout << "dt: " << dt << std::endl;
 
     //adding the correct axis
     int label_step = window_size/10;
     for (int k = 1; k <= window_size; k+=label_step) {
         double freq = -f_max + (k - 1) * df;
-        hist -> GetYaxis()->SetBinLabel(k, Form("%.2f", freq));
+        hist -> GetYaxis()->SetBinLabel(k, Form("%.4f", freq));
     }
 }

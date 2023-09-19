@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Alignment::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Alignment-Debug-f0b3501643b3a16e85ae.json",
+					"jsonFile" : "target-Alignment-Debug-bb9434d1d0cfa1cef782.json",
 					"name" : "Alignment",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-debug",
-		"source" : "/home/rob/Documents/Coding/ETH-Simulations/alignment"
+		"build" : "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug",
+		"source" : "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }

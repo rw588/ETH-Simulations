@@ -14,6 +14,9 @@ list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/bin/root")
 # Find ROOT and specify the components you need
 find_package(ROOT REQUIRED COMPONENTS Core Tree MathCore Hist RIO Graf Gpad)
 
+if (${APPLE})
+    find_package( OpenMP )
+
 # Add ROOT includes
 include_directories(${ROOT_INCLUDE_DIRS})
 

@@ -1,0 +1,8 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment
+CMake Error at CMakeLists.txt:17 (if):
+  Flow control statements are not properly nested.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeError.log".

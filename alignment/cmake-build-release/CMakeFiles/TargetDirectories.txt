@@ -1,3 +1,0 @@
-/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-release/CMakeFiles/Alignment.dir
-/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/rob/Documents/Coding/ETH-Simulations/alignment/cmake-build-release/CMakeFiles/rebuild_cache.dir

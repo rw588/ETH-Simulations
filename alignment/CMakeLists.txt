@@ -16,6 +16,7 @@ find_package(ROOT REQUIRED COMPONENTS Core Tree MathCore Hist RIO Graf Gpad)
 
 if (${APPLE})
     find_package( OpenMP )
+endif()
 
 # Add ROOT includes
 include_directories(${ROOT_INCLUDE_DIRS})

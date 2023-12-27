@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -G "CodeBlocks - Unix Makefiles" /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment
 CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
   Could NOT find Vdt (missing: VDT_INCLUDE_DIR VDT_LIBRARY)
 Call Stack (most recent call first):
@@ -10,5 +10,5 @@ Call Stack (most recent call first):
 
 
 -- Configuring incomplete, errors occurred!
-See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug/CMakeFiles/CMakeError.log".
+See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-release/CMakeFiles/CMakeOutput.log".
+See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-release/CMakeFiles/CMakeError.log".

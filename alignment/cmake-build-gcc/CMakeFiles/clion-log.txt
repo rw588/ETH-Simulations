@@ -1,0 +1,24 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-13 -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-13 -G "Unix Makefiles" /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment
+-- The CXX compiler identification is GNU 13.2.0
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/homebrew/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found nlohmann_json: /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.11.2", minimum required is "3.11.2") 
+CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find Vdt (missing: VDT_INCLUDE_DIR VDT_LIBRARY)
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+  /opt/homebrew/Cellar/root/6.30.00/share/root/cmake/modules/FindVdt.cmake:63 (find_package_handle_standard_args)
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /opt/homebrew/Cellar/root/6.30.00/share/root/cmake/ROOTConfig.cmake:132 (find_dependency)
+  CMakeLists.txt:59 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-gcc/CMakeFiles/CMakeOutput.log".

@@ -25,6 +25,14 @@ void fft_shift(Double_t *fft_magnitude, Int_t window_size);
 void prepare_fft_axis(TH2D *hist, double dt, int window_size);
 
 int main() {
+    #ifdef __GNUC__
+    std::cout << "GCC version: " << __GNUC__ << "." << __GNUC_MINOR__ << "." << __GNUC_PATCHLEVEL__ << std::endl;
+    #else
+    std::cout << "Not using GCC" << std::endl;
+    #endif
+    //gcc test
+
+
     // Define constants
     Double_t GRATING_PERIOD = 400;
     Double_t WAVELENGTH = 5;

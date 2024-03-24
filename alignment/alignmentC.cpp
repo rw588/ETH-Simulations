@@ -9,7 +9,7 @@
 #include <TVirtualFFT.h>
 #include <iostream>
 #include <TRandom3.h>
-#include <omp.h>
+//#include <omp.h>
 
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;

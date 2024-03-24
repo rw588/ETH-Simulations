@@ -1,6 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -G "CodeBlocks - Unix Makefiles" /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment
--- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
--- Could NOT find OpenMP (missing: OpenMP_CXX_FOUND) 
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment/cmake-build-debug

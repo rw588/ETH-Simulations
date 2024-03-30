@@ -1,0 +1,8 @@
+{
+    "GRATING_PERIOD": 0.5,
+    "WAVELENGTH": 0.633,
+    "NUMBER_OF_PERIODS": 10,
+    "ZSTEPS": 100,
+    "XYSTEPS": 200
+  }
+  

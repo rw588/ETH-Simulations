@@ -11,6 +11,12 @@
 #include <TRandom3.h>
 //#include <omp.h>
 
+//GRATING_PERIOD
+//WAVELENGTH
+//NUMBER OF PERIODS
+//ZSTEPS
+//XYSTEPS
+
 // Define constants
 const Int_t NUMBER_OF_PERIODS = 20;
 const Int_t ZSTEPS = 3000;

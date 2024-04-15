@@ -1,14 +1,5 @@
-#include <TMath.h>
-#include <TVectorD.h>
-#include <TMatrixD.h>
-#include <TH1D.h>
-#include <TH2D.h>
-#include <TGraph2D.h>
-#include <TCanvas.h>
-#include <TGraph.h>
-#include <TVirtualFFT.h>
 #include <iostream>
-#include <TRandom3.h>
+#include <fstream>
 #include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
@@ -21,23 +12,29 @@ struct Parameters {
     int xySteps;
 };
 
-Parameters json();
+Parameters readParametersFromJson();
 
-float json()
+int main() {
+    Parameters params = readParametersFromJson();
 
-int main(){
-    Parameters params = json();
-    float gratingPeriod;
-    float wavelength;
-    int numberOfPeriods;
-    int zSteps;
-    int xySteps;
+    // Access parameters
+    float gratingPeriod = params.gratingPeriod;
+    float wavelength = params.wavelength;
+    int numberOfPeriods = params.numberOfPeriods;
+    int zSteps = params.zSteps;
+    int xySteps = params.xySteps;
+
+    // Print parameters
+    std::cout << "Grating Period: " << params.gratingPeriod << std::endl;
+    std::cout << "Wavelength: " << params.wavelength << std::endl;
+    std::cout << "Number of Periods: " << params.numberOfPeriods << std::endl;
+    std::cout << "Z Steps: " << params.zSteps << std::endl;
+    std::cout << "XY Steps: " << params.xySteps << std::endl;
 
     return 0;
-
 }
 
-Parameters json() {
+Parameters readParametersFromJson() {
     Parameters params;
 
     // Read JSON file
@@ -48,7 +45,7 @@ Parameters json() {
     }
 
     // Parse JSON
-    nlohmann::json j;
+    json j;
     try {
         ifs >> j;
     } catch (const std::exception& e) {
@@ -57,12 +54,15 @@ Parameters json() {
     }
 
     // Accessing values
-    float gratingPeriod = j["GRATING_PERIOD"];
-    float wavelength = j["WAVELENGTH"];
-    int numberOfPeriods = j["NUMBER_OF_PERIODS"];
-    int zSteps = j["ZSTEPS"];
-    int xySteps = j["XYSTEPS"];
+    try {
+        params.gratingPeriod = j["GRATING_PERIOD"];
+        params.wavelength = j["WAVELENGTH"];
+        params.numberOfPeriods = j["NUMBER_OF_PERIODS"];
+        params.zSteps = j["ZSTEPS"];
+        params.xySteps = j["XYSTEPS"];
+    } catch (const std::exception& e) {
+        std::cerr << "Error accessing JSON values: " << e.what() << std::endl;
+    }
 
     return params;
 }
-

@@ -14,7 +14,7 @@ struct Parameters {
 
 Parameters readParametersFromJson();
 
-int main() {
+int main() {d
     Parameters params = readParametersFromJson();
 
     // Access parameters

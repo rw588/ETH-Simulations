@@ -1,0 +1,203 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Darwin - 23.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-fmessage-length=0;-isystem;/Users/robertwaddy/opt/anaconda3/envs/pyROOT/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-rYWfxg"
+      binary: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-rYWfxg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib -L/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-rYWfxg'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_be216/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_be216.dir/build.make CMakeFiles/cmTC_be216.dir/build
+        Building CXX object CMakeFiles/cmTC_be216.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_be216.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_be216.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_be216.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 14.0.6
+        Target: arm64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin
+        clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        clang-14: error: the clang compiler does not support '-march=core2'
+        make[1]: *** [CMakeFiles/cmTC_be216.dir/CMakeCXXCompilerABI.cpp.o] Error 1
+        make: *** [cmTC_be216/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-WLW6WA"
+      binary: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-WLW6WA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib -L/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-WLW6WA'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b24ab/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b24ab.dir/build.make CMakeFiles/cmTC_b24ab.dir/build
+        Building CXX object CMakeFiles/cmTC_b24ab.dir/testCXXCompiler.cxx.o
+        /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_b24ab.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_b24ab.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_b24ab.dir/testCXXCompiler.cxx.o -c /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-WLW6WA/testCXXCompiler.cxx
+        clang-14: error: the clang compiler does not support '-march=core2'
+        make[1]: *** [CMakeFiles/cmTC_b24ab.dir/testCXXCompiler.cxx.o] Error 1
+        make: *** [cmTC_b24ab/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-fmessage-length=0;-isystem;/Users/robertwaddy/opt/anaconda3/envs/pyROOT/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-AJ7HWj"
+      binary: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-AJ7HWj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib -L/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-AJ7HWj'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_10e68/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_10e68.dir/build.make CMakeFiles/cmTC_10e68.dir/build
+        Building CXX object CMakeFiles/cmTC_10e68.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_10e68.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_10e68.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_10e68.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 14.0.6
+        Target: arm64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin
+        clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        clang-14: error: the clang compiler does not support '-march=core2'
+        make[1]: *** [CMakeFiles/cmTC_10e68.dir/CMakeCXXCompilerABI.cpp.o] Error 1
+        make: *** [cmTC_10e68/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-QKXDtf"
+      binary: "/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-QKXDtf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib -L/Users/robertwaddy/opt/anaconda3/envs/pyROOT/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-QKXDtf'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5ebe7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5ebe7.dir/build.make CMakeFiles/cmTC_5ebe7.dir/build
+        Building CXX object CMakeFiles/cmTC_5ebe7.dir/testCXXCompiler.cxx.o
+        /Users/robertwaddy/opt/anaconda3/envs/pyROOT/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/robertwaddy/opt/anaconda3/envs/pyROOT/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_5ebe7.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_5ebe7.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_5ebe7.dir/testCXXCompiler.cxx.o -c /Users/robertwaddy/Documents/GitHub/ETH-Simulations/alignment2/CMakeFiles/CMakeScratch/TryCompile-QKXDtf/testCXXCompiler.cxx
+        clang-14: error: the clang compiler does not support '-march=core2'
+        make[1]: *** [CMakeFiles/cmTC_5ebe7.dir/testCXXCompiler.cxx.o] Error 1
+        make: *** [cmTC_5ebe7/fast] Error 2
+        
+      exitCode: 2
+...

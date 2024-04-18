@@ -9,7 +9,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add path to ROOT's CMake modules, replace this with your actual ROOT installation path
-list(APPEND CMAKE_PREFIX_PATH "/home/rob/miniconda3/envs/pyROOT/bin/root")
+list(APPEND CMAKE_PREFIX_PATH "/home/rob/miniconda3/envs/pyROOT/bin/root") #for linux
+list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/bin/root") #for mac
 
 # Find ROOT and specify the components you need
 find_package(ROOT REQUIRED COMPONENTS Core Tree MathCore Hist RIO Graf Gpad)

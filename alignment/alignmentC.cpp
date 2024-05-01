@@ -24,7 +24,7 @@ const Int_t XYSTEPS = 300;
 const Int_t RESOLUTION = ZSTEPS/NUMBER_OF_PERIODS;
 
 // Forward declaration of functions
-Double_t Pattern(TRandom3* randomGen, Double_t We will be below the talbot length, but there is a small region where we get no oscillations, as we are coherence length limited. I think with this X-Ray source we will have very little coherence as the m, Double_t ylim, Int_t steps, TMatrixD& X, TMatrixD& Y, TMatrixD& Z);
+Double_t Pattern(TRandom3* randomGen, Double_t xlim, Double_t ylim, Int_t steps, TMatrixD& X, TMatrixD& Y, TMatrixD& Z);
 void fft_shift(Double_t *fft_magnitude, Int_t window_size);
 //TRandom3 randomGen;
 void prepare_fft_axis(TH2D *hist, double dt, int window_size);

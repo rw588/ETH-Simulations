@@ -73,15 +73,15 @@ CMakeFiles/Alignment2.dir/alignment2.cpp.o: CMakeFiles/Alignment2.dir/flags.make
 CMakeFiles/Alignment2.dir/alignment2.cpp.o: alignment2.cpp
 CMakeFiles/Alignment2.dir/alignment2.cpp.o: CMakeFiles/Alignment2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rob/Documents/Coding/ETH-Simulations/alignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Alignment2.dir/alignment2.cpp.o"
-	/home/rob/miniconda3/envs/pyROOT/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Alignment2.dir/alignment2.cpp.o -MF CMakeFiles/Alignment2.dir/alignment2.cpp.o.d -o CMakeFiles/Alignment2.dir/alignment2.cpp.o -c /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Alignment2.dir/alignment2.cpp.o -MF CMakeFiles/Alignment2.dir/alignment2.cpp.o.d -o CMakeFiles/Alignment2.dir/alignment2.cpp.o -c /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp
 
 CMakeFiles/Alignment2.dir/alignment2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Alignment2.dir/alignment2.cpp.i"
-	/home/rob/miniconda3/envs/pyROOT/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp > CMakeFiles/Alignment2.dir/alignment2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp > CMakeFiles/Alignment2.dir/alignment2.cpp.i
 
 CMakeFiles/Alignment2.dir/alignment2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Alignment2.dir/alignment2.cpp.s"
-	/home/rob/miniconda3/envs/pyROOT/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp -o CMakeFiles/Alignment2.dir/alignment2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rob/Documents/Coding/ETH-Simulations/alignment2/alignment2.cpp -o CMakeFiles/Alignment2.dir/alignment2.cpp.s
 
 # Object files for target Alignment2
 Alignment2_OBJECTS = \

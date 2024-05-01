@@ -2,7 +2,11 @@
     "GRATING_PERIOD": 0.5,
     "WAVELENGTH": 0.633,
     "NUMBER_OF_PERIODS": 10,
-    "ZSTEPS": 100,
-    "XYSTEPS": 200
+    "ZSTEPS": 200,
+    "XYSTEPS": 200,
+    "GFR": 100,
+    "TIP": 0.0,
+    "ROTATION_X": 0.0,
+    "ROTATION_Y": 0.0
   }
   
